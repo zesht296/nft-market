@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import styled from "styled-components";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import Store from "./components/Store";
+import Product from "./components/Product";
+import NavMenu from "./components/NavMenu";
+
+const AppEl = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+`;
+
+const Pages = styled.div`
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <AppEl>
+        <Pages>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/store" element={<Store />} />
+            <Route exact path="/products" element={<Product />} />
+          </Routes>
+        </Pages>
+        <NavMenu />
+      </AppEl>
+    </BrowserRouter>
   );
 }
 

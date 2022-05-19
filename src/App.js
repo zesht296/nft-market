@@ -5,10 +5,7 @@ import Home from "./components/Home";
 import Store from "./components/Store";
 import Product from "./components/Product";
 import NavMenu from "./components/NavMenu";
-<<<<<<< HEAD
 import Profile from "./components/Profile";
-=======
->>>>>>> dca186547d0675d77c7f1cefa0997536050e0f9d
 
 const AppEl = styled.div`
   display: flex;
@@ -36,10 +33,7 @@ function App() {
             <Route exact path="/" element={<Home />} />
             <Route exact path="/store" element={<Store />} />
             <Route exact path="/products" element={<Product />} />
-<<<<<<< HEAD
             <Route exact path="/profile" element={<Profile />} />
-=======
->>>>>>> dca186547d0675d77c7f1cefa0997536050e0f9d
           </Routes>
         </Pages>
         <NavMenu />

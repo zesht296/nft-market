@@ -52,11 +52,7 @@ const NavMenu = () => {
       >
         <BiStore />
       </Link>
-<<<<<<< HEAD
       <Link active={pathname === "/profile"} onClick={() => nav("/profile")}>
-=======
-      <Link>
->>>>>>> dca186547d0675d77c7f1cefa0997536050e0f9d
         <AiOutlineUser />
       </Link>
     </NavMenuEl>

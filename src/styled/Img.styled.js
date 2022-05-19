@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import React from "react";
+>>>>>>> dca186547d0675d77c7f1cefa0997536050e0f9d
 import styled from "styled-components";
 
 const Img = styled.img`
